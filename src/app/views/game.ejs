@@ -1,0 +1,29 @@
+<?- include('partials/head', {title: "home" }) ?>
+
+<h1>Game page</h1>
+
+<form action="game" method="GET">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>Byte1</label>
+      <input type="text" placeholder="Input 0-255" maxlength="3" class="form-control" name="byte1">
+    </div>
+    <div class="form-group col-md-6">
+      <label >Byte2</label>
+      <input type="text" placeholder="Input 0-255" maxlength="3" class="form-control" name="byte2">
+    </div>
+  </div>
+  <button style="margin-left: 20px;" type="submit" class="btn btn-danger">Play</button>
+</form>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<? if (show) { ?>
+  <p style="margin-left: 20px;"><?- show ?></p>
+<? } ?>
+
+<?- include('partials/footer') ?>
